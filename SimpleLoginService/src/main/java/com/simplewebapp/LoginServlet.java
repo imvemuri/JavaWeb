@@ -1,4 +1,4 @@
-package com.springapp;
+package com.simplewebapp;
 
 import java.io.IOException;
 

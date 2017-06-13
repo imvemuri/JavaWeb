@@ -1,4 +1,4 @@
-package com.springapp;
+package com.simplewebapp;
 
 // Validates Login details
 public class LoginService {
