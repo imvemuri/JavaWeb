@@ -1,7 +1,7 @@
 # Base Image
 FROM mysql
 
-# Root and it's password
+# Creating root User and it's password
 ENV MYSQL_ROOT_USER="<enter user name>"
 ENV MYSQL_ROOT_PASSWORD="<enter your password>"
 
