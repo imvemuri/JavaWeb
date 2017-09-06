@@ -2,8 +2,8 @@
 FROM mysql
 
 # Root and it's password
-ENV MYSQL_ROOT_USER="root"
-ENV MYSQL_ROOT_PASSWORD="docker"
+ENV MYSQL_ROOT_USER="<enter user name>"
+ENV MYSQL_ROOT_PASSWORD="<enter your password>"
 
 # The volume is Bind mounted
 #ADD first_schema.sql /docker-entrypoint-initdb.d/first_schema.sql
