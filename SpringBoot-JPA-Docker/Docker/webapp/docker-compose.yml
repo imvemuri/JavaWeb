@@ -1,0 +1,16 @@
+version: '2'
+services:
+# Database container - sql exposed on host<3306> and container <3306>.
+    db:
+        build: sql/.
+        ports: 
+           - "3306:3306"
+        volumes:
+           - ./Docker/data/db:/var/lib/mysql
+# Spring web app depends on database(db) and exposed on 8085<host> to container <8085>.      
+    spring:
+        build: spring/.
+        ports: 
+           - "8085:8085"
+        depends_on: 
+           - 'db'
